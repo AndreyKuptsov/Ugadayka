@@ -1,11 +1,10 @@
 
 import random
-user_name = input('Привет! Как тебя зовут? ')
+user_name = input('Hello! Enter you name: ')
 num = random.randint(1, 101)
-user_num = float(input('Введите число: '))
-while True:
-    if user_num != num:
-        print(f'Не угадал, {user_name}, попробуй еще раз')
-        user_num = float(input('Введите число: '))
+user_num = float(input('Enter number '))
+while user_num != num:
+        print(f'Oops, {user_name}, try again')
+        user_num = float(input('Enter number '))
 else:
-    print(f'Ура! {user_name}, это именно то число!')
+    print(f'Yes! {user_name}, you are Wonderful!')
